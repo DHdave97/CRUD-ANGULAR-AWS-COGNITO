@@ -6,8 +6,8 @@ import { AuthenticationDetails, CognitoUser, CognitoUserAttribute, CognitoUserPo
 import { BehaviorSubject, Subject, Observable } from 'rxjs';
 
 const POOL_DATA = {
-  UserPoolId:'us-east-2_HEXzl4JLP',
-  ClientId:'btupf2so4g0oq6knnbslvtogd'
+  UserPoolId:'/*TU POOL AQUI**/',
+  ClientId:'/*CLIENTE IDD AQUI */'
 }
 const userPool = new CognitoUserPool(POOL_DATA)
 

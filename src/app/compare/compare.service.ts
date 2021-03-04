@@ -32,7 +32,7 @@ export class CompareService extends ApiService {
       if(err){
         return;
       }
-      /*this.create('https://y1g8leas7i.execute-api.us-east-2.amazonaws.com/dev', data, {
+      /*this.create('TU URL AQUI', data, {
         headers: new Headers({'Authorization': session.getIdToken().getJwtToken()})
       })*/
       this.create(data).subscribe(
@@ -58,7 +58,7 @@ export class CompareService extends ApiService {
       if (!all) {
         this.url = '/single'+queryParam;
       }
-      /*this.http.get('https://API_ID.execute-api.REGION.amazonaws.com/dev/' + urlParam + queryParam, {
+      /*this.http.get('hTU URL AQUI/' + urlParam + queryParam, {
         headers: new Headers({'Authorization': 'XXX'})
       })*/
       this.getAll()
@@ -89,7 +89,7 @@ export class CompareService extends ApiService {
     this.dataLoadFailed.next(false);
     let queryParam = '?accessToken='+localStorage.getItem('tokenAcc');
     this.url = '/compare-yourself'+queryParam;
-      /*this.http.delete('https://API_ID.execute-api.REGION.amazonaws.com/dev/', {
+      /*this.http.delete('TU URL AQUI', {
         headers: new Headers({'Authorization': 'XXX'})
       })*/
       this.deleteTk()
